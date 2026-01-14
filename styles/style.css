@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.calendar-day.header {
+    font-weight: bold;
+    background-color: #e9ecef;
+    cursor: default;
+}
+
+.calendar-day.not-in-month {
+    background-color: #f8f9fa;
+    color: #ccc;
+    cursor: default;
+}
+
+.calendar-day.selected {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.calendar-day.past {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}

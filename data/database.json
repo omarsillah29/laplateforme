@@ -1,0 +1,27 @@
+{
+    "users": {
+        "1": {
+            "email": "amad@laplateforme.io",
+            "password": "2da813f513b536d497de208e50414b9a46709f92a48062335e7a53b77e5e8479",
+            "role": "moderator"
+        },
+        "2": {
+            "email": "khaly@laplateforme.io",
+            "password": "2da813f513b536d497de208e50414b9a46709f92a48062335e7a53b77e5e8479",
+            "role": "user"
+        },
+        "3": {
+            "email": "admin@laplateforme.io",
+            "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+            "role": "admin"
+        }
+    },
+    "requests": [
+        {
+            "user": "amad@laplateforme.io",
+            "date": "2025-10-29",
+            "status": "accept\u00e9e",
+            "id": 1
+        }
+    ]
+}
