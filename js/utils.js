@@ -1,5 +1,4 @@
-// Clé pour le stockage local
-const SESSION_KEY = 'plateforme_presence_session';
+// Clé pour le stockage localonst SESSION_KEY = 'plateforme_presence_session';
 
 /**
  * Sauvegarde les informations de session de l'utilisateur.

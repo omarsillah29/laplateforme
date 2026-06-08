@@ -35,10 +35,17 @@ function handleRegister() {
     $password = $data['password'];
 
     // Basic validation
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL) || !str_ends_with($email, '@laplateforme.io')) {
+    // Use a compatibility-safe ends-with check instead of str_ends_with
+    $requiredDomain = '@laplateforme.io';
+    $endsWithDomain = (substr($email, -strlen($requiredDomain)) === $requiredDomain);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) || !$endsWithDomain) {
         http_response_code(400);
         echo json_encode(['error' => 'Invalid email domain']);
         return;
+    }
+    // Ensure users is an array (database may store users as an object with numeric keys)
+    if (!isset($db['users']) || !is_array($db['users'])) {
+        $db['users'] = [];
     }
 
     foreach ($db['users'] as $user) {

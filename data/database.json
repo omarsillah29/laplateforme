@@ -14,6 +14,16 @@
             "email": "admin@laplateforme.io",
             "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
             "role": "admin"
+        },
+        "4": {
+            "email": "testuser@laplateforme.io",
+            "password": "deadbeef",
+            "role": "user"
+        },
+        "5": {
+            "email": "omar@laplateforme.io",
+            "password": "978ac51e937c28722e8507ffc21f710341f0f4b51efa5af3f2d4472ceb8af314",
+            "role": "user"
         }
     },
     "requests": [
@@ -22,6 +32,18 @@
             "date": "2025-10-29",
             "status": "accept\u00e9e",
             "id": 1
+        },
+        {
+            "user": "omar@laplateforme.io",
+            "date": "2026-06-02",
+            "status": "en attente",
+            "id": 2
+        },
+        {
+            "user": "omar@laplateforme.io",
+            "date": "2026-06-16",
+            "status": "en attente",
+            "id": 3
         }
     ]
 }
